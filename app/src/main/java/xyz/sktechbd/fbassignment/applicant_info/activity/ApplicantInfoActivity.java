@@ -65,7 +65,7 @@ public class ApplicantInfoActivity extends AppCompatActivity
 
         init();
         getAuthToken();
-        testSetValue();
+        //testSetValue();
         setApplyInValue();
         requestStoragePermission();
 
@@ -194,14 +194,14 @@ public class ApplicantInfoActivity extends AppCompatActivity
     void testSetValue() {
         tilName.getEditText().setText("Md. Salauddin");
         tilEmail.getEditText().setText("salauddin.csese@gmail.com");
-        tilMobileNo.getEditText().setText("+8801675017117");
-        tilNameOfUniversity.getEditText().setText("Southeast university");
-        tilGraduationYear.getEditText().setText("2017");
-        tilCGPA.getEditText().setText("3.10");
+        tilMobileNo.getEditText().setText("");
+        tilNameOfUniversity.getEditText().setText("");
+        tilGraduationYear.getEditText().setText("");
+        tilCGPA.getEditText().setText("");
 
-        tilCompanyName.getEditText().setText("Doodle inc");
-        tilWorkExperience.getEditText().setText("18");
-        tilExpectedSalary.getEditText().setText("35000");
+        tilCompanyName.getEditText().setText("");
+        tilWorkExperience.getEditText().setText("");
+        tilExpectedSalary.getEditText().setText("");
         tilGithubProjectUrl.getEditText().setText("https://github.com/Md-Salauddin/F.B-Assignment");
     }
 

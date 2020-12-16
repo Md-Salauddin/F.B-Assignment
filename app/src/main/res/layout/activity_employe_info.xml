@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".applicant_info.ApplicantInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/global_16dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/applicant_information"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/line_height"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <!-- personal info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/global_8dp"
+            app:cardCornerRadius="@dimen/global_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- name text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginTop="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLength="256"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- email text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="256"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- mobile no text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/phone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLength="14"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- address text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:layout_marginBottom="@dimen/global_16dp"
+                    android:hint="@string/full_address">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLength="512"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- uni info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/global_8dp"
+            app:cardCornerRadius="@dimen/global_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- name of university text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_name_of_university"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/name_of_university">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLength="256"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- graduation year and cgpa -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/global_16dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <!-- graduation year text input layout -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tf_graduation_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_16dp"
+                        android:layout_marginRight="@dimen/global_16dp"
+                        android:layout_weight="1"
+                        android:hint="@string/graduation_year">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="@color/dark_gray" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- cgpa text input layout -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tf_cgpa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_16dp"
+                        android:layout_marginRight="@dimen/global_16dp"
+                        android:layout_weight="1"
+                        android:hint="@string/cgpa">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:textColor="@color/dark_gray" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- current work place -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/global_8dp"
+            app:cardCornerRadius="@dimen/global_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- currently work place name text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_work_place_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/current_work_place_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLength="256"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- experience in month text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_experience_in_months"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/experience_in_month">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- applying info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/global_8dp"
+            app:cardCornerRadius="@dimen/global_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- applying in text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_applying_in"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/applying_in">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- expected salary text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_expected_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/expected_salary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- field buzz reference text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_field_buzz_ref"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/field_buzz_ref">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLength="256"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- github url text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_github_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:hint="@string/github_project_url">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textWebEditText"
+                        android:maxLength="512"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- pdf file text input layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tf_cv_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_16dp"
+                    android:layout_marginRight="@dimen/global_16dp"
+                    android:layout_marginBottom="@dimen/global_16dp"
+                    android:background="@android:color/darker_gray"
+                    android:hint="@string/cv_file"
+                    app:startIconDrawable="@drawable/ic_baseline_attach_file">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_cv_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"
+                        android:maxLength="256"
+                        android:textColor="@color/dark_gray" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/pb_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/btn_submit_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/global_16dp"
+            android:layout_marginBottom="@dimen/global_16dp"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

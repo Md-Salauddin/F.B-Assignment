@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">F.B Assignment</string>
+
+    <!-- main/login activity -->
+    <string name="api_error"> Something went wrong, please try again.</string>
+
+    <!-- Applicant information -->
+    <string name="applicant_information">Applicant Information</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Mobile no</string>
+    <string name="full_address">Full address</string>
+    <string name="name_of_university">Name of university</string>
+    <string name="graduation_year">Graduation year</string>
+    <string name="cgpa">CGPA</string>
+    <string name="current_work_place_name">Current work place name</string>
+    <string name="experience_in_month">Experience in month</string>
+    <string name="expected_salary">Expected salary</string>
+    <string name="applying_in">Applying in</string>
+    <string name="field_buzz_ref">Field buzz reference</string>
+    <string name="github_project_url">Github project url</string>
+    <string name="submit">Submit</string>
+    <string name="cv_file">CV file</string>
+
+    <string name="required">required</string>
+    <string name="email_error">invalid email address</string>
+    <string name="graduation_year_min_max_error">graduation year must be within 2015 to 2020</string>
+    <string name="cgpa_min_max_error">cgpa must be within 2.0 to 4.0</string>
+    <string name="experience_min_max_error">experience must be within 0 to 100</string>
+    <string name="expected_salary_min_max_error">expected salary must be within 15000 to 60000</string>
+    <string name="github_url_error">invalid url address</string>
+    <string name="cv_error">pdf file size must be within 4 mb</string>
+
+</resources>

@@ -1,4 +1,4 @@
-package xyz.sktechbd.fbassignment.applicant_info;
+package xyz.sktechbd.fbassignment.applicant_info.activity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -200,9 +200,9 @@ public class ApplicantInfoActivity extends AppCompatActivity
         tilCGPA.getEditText().setText("3.10");
 
         tilCompanyName.getEditText().setText("Doodle inc");
-        tilWorkExperience.getEditText().setText("15");
+        tilWorkExperience.getEditText().setText("18");
         tilExpectedSalary.getEditText().setText("35000");
-        tilGithubProjectUrl.getEditText().setText("https://github.com/salauddin");
+        tilGithubProjectUrl.getEditText().setText("https://github.com/Md-Salauddin/F.B-Assignment");
     }
 
     // requesting permission

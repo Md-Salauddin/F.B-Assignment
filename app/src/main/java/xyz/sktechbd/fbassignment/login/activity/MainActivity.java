@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.JsonObject;
 
-import xyz.sktechbd.fbassignment.applicant_info.ApplicantInfoActivity;
+import xyz.sktechbd.fbassignment.applicant_info.activity.ApplicantInfoActivity;
 import xyz.sktechbd.fbassignment.R;
 import xyz.sktechbd.fbassignment.login.presenter.LoginPresenter;
 import xyz.sktechbd.fbassignment.login.view.LoginView;

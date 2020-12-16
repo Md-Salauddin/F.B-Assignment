@@ -4,10 +4,11 @@ public class ConstantFile {
 
     // base url
     public static final String BASE_URL = "https://recruitment.fisdev.com/api/";
-                                        // https://recruitment.fisdev.com/api/v0/recruiting-entities/
+
     // api end point
     public static final String LOGIN = "login";
-    public static final String APPLICANT_ENTITIES = "v0/recruiting-entities/";
+    public static final String APPLICANT_ENTITIES = "v1/recruiting-entities/";
+    public static final String TEST_APPLICANT_ENTITIES = "v0/recruiting-entities/";
     public static final String SEND_PDF = "file-object/{FILE_TOKEN_ID}/";
 
     // auth token key

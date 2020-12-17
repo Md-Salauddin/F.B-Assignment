@@ -117,7 +117,8 @@ public class ApplicantInfoActivity extends AppCompatActivity
 
                 //Parsing any Media type file
                 RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), new File(path));
-                part = MultipartBody.Part.createFormData("pdf", new File(path).getName(), requestFile);
+                //part = MultipartBody.Part.createFormData("file", new File(path).getName(), requestFile);
+                part = MultipartBody.Part.createFormData("file", new File(path).getName(), requestFile);
             }
             else {
                 tilCvFile.setError(getString(R.string.cv_error));
@@ -194,6 +195,7 @@ public class ApplicantInfoActivity extends AppCompatActivity
     void testSetValue() {
         tilName.getEditText().setText("Md. Salauddin");
         tilEmail.getEditText().setText("salauddin.csese@gmail.com");
+        tilAddress.getEditText().setText("");
         tilMobileNo.getEditText().setText("");
         tilNameOfUniversity.getEditText().setText("");
         tilGraduationYear.getEditText().setText("");
@@ -202,7 +204,7 @@ public class ApplicantInfoActivity extends AppCompatActivity
         tilCompanyName.getEditText().setText("");
         tilWorkExperience.getEditText().setText("");
         tilExpectedSalary.getEditText().setText("");
-        tilGithubProjectUrl.getEditText().setText("https://github.com/Md-Salauddin/F.B-Assignment");
+        tilGithubProjectUrl.getEditText().setText("");
     }
 
     // requesting permission
